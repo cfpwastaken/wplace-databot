@@ -55,7 +55,7 @@ async function checkOverlayTicket(msg: Message) {
 	// Check if this channel has any message with a wplace.live link
 	const hasWplaceLiveLink = messages.some(m => m.content.includes("wplace.live"));
 	if(!hasWplaceLiveLink) {
-		msg.reply("🇩🇪 Bitte sende einen Link zum Ort deines Artworks über den Share Knopf auf Wplace.\n🇺🇸 Please send a link to the location of your artwork using the share button in Wplace.");
+		msg.reply("🇩🇪 Bitte sende einen Link zum Ort deines Artworks (oben-linke Ecke vom Bild!) über den Share Knopf auf Wplace.\n🇺🇸 Please send a link to the location of your artwork (top-left corner of the image!) using the share button in Wplace.");
 	}
 
 	const hasArtworkIgnore = messages.some(m => m.content.includes("!artignore"));
