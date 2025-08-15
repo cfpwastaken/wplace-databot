@@ -59,6 +59,7 @@ async function checkOverlayTicket(msg: Message) {
 	}
 
 	const hasArtworkIgnore = messages.some(m => m.content.includes("!artignore"));
+	if(hasArtworkIgnore) return;
 	// If the message has an image attachment, check its dimensions
 	if(msg.attachments.size > 0) {
 		const attachment = msg.attachments.first();
