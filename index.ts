@@ -45,7 +45,7 @@ async function checkOverlayTicket(msg: Message) {
 	if(messages.size === 3) {
 		const adminChannel = bot.channels.cache.get(ADMIN_CHANNEL);
 		if(adminChannel && adminChannel instanceof TextChannel) {
-			adminChannel.send(`Neues Overlay Ticket in <#${msg.channel.id}> <@1399472653605015552>`);
+			adminChannel.send(`Neues Overlay Ticket in <#${msg.channel.id}> <@&1399472653605015552>`);
 		}
 	}
 
